@@ -6,7 +6,7 @@ class TweetsController < ApplicationController
   
   def new
     if params[:back]
-      @tweet=Tweet.new(blogs_params)
+      @tweet=Tweet.new(tweets_params)
     else
       @tweet=Tweet.new
     end
